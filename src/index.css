@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cute Font');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -14,29 +16,113 @@ body {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 h1 {
   font-size: 6rem;
 }
 
+.welcome{
+  text-align: center;
+}
+
+img{
+  height:30%;
+  width: 30%;
+  rotate: 5deg;
+}
+
 .app {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
-  background-color:antiquewhite;
+  /* background-color:antiquewhite; */
   color: black;
+  overflow: hidden;
 }
 
 .app:before {
   content: '';
-  /* background: url('/Users/shaithea/VSCode Projects/weather-app-react/src/assets/greenBackground.jpg') no-repeat center center/cover; */
-  background: url('./assets/greenBackground.jpg') no-repeat center center/cover;
+  background: url('./assets/greenBackground.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.app .search{
+  text-align: center;
+  padding: 1rem;
+}
+
+.app input{
+  padding: 1rem 1rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  border: 3px solid rgb(33, 96, 65);
+  /* border: 3px solid #f6ffde; */
+  /* background: #f6ffde; */
+  background: rgb(193, 250, 202);
+  color: black;
+}
+
+::placeholder{
+  color: rgb(33, 96, 65);
+}
+
+.container {
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content:baseline;
+}
+
+.temp{
+  display: flex;
+  align-items:start;
+  /* align-items: baseline; */
+  border-radius: 1rem;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.tempRange {
+  display: inline-block;
+  justify-content:center;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.app .description {
+  position: relative;
+  /* right: -65%; */
+  transform-origin: 0 0;
+}
+
+.app .bottom{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color:rgb(51, 200, 125);
+}
+
+.bold {
+  font-weight: 700;
 }
