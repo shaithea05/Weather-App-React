@@ -1,5 +1,11 @@
-body {
+*{
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  /* margin: 0; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +13,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color:antiquewhite;
+  color: black;
+}
+
+.app:before {
+  content: '';
+  /* background: url('/Users/shaithea/VSCode Projects/weather-app-react/src/assets/greenBackground.jpg') no-repeat center center/cover; */
+  background: url('./assets/greenBackground.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
