@@ -27,9 +27,21 @@ h1 {
   text-align: center;
 }
 
-img{
+/* img{
   height:30%;
   width: 30%;
+  rotate: 5deg;
+} */
+
+.sloth {
+  height:30%;
+  width: 30%;
+  rotate: 5deg;
+}
+
+.tryAgain {
+  height:70%;
+  width: 70%;
   rotate: 5deg;
 }
 
@@ -40,6 +52,14 @@ img{
   /* background-color:antiquewhite; */
   color: black;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .app:before {
@@ -53,6 +73,7 @@ img{
   top: 0;
   left: 0;
   z-index: -1;
+  overflow: hidden;
 }
 
 .app .search{
@@ -85,6 +106,7 @@ img{
   display: flex;
   flex-direction: column;
   justify-content:baseline;
+  overflow: hidden;
 }
 
 .temp{
@@ -121,6 +143,13 @@ img{
   padding: 1rem;
   border-radius: 1rem;
   background-color:rgb(51, 200, 125);
+}
+
+.refresh {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  overflow: hidden;
 }
 
 .bold {
